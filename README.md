@@ -1,70 +1,35 @@
-# 📊 DataInsight AI: Ultimate Builder
+# Data Insight AI
 
-> **Business Intelligence Autônomo impulsionado por Inteligência Artificial Generativa.**
+**Can an AI-powered platform automatically analyze any dataset and generate the right visualizations and KPIs?**
 
-![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
-![Streamlit](https://img.shields.io/badge/Streamlit-1.31-red)
-![AI](https://img.shields.io/badge/AI-Gemini%20Pro-green)
-![Status](https://img.shields.io/badge/Status-Concluído-brightgreen)
+Self-service BI tool that uses Google Gemini to autonomously explore data, recommend KPIs, generate 30+ chart types, and answer business questions via natural language — all without writing code.
 
-## 💡 Sobre o Projeto
+## Key Features
 
-O **DataInsight AI** é uma plataforma de Business Intelligence "Self-Service" que revoluciona a forma como analisamos dados. Diferente de dashboards estáticos, esta ferramenta utiliza a **Google Gemini AI** para atuar como um consultor de dados sênior, sugerindo KPIs, gerando gráficos automaticamente e respondendo perguntas complexas sobre a base de dados em linguagem natural.
+| Feature | Description |
+|---------|-------------|
+| 🤖 AI Analysis | Gemini auto-suggests KPIs and optimal charts based on data structure |
+| 📊 Manual Builder | No-code interface with 30+ chart types (Waterfall, Funnel, Sankey, Gauge...) |
+| 🩺 Data Health | Automated quality diagnostics (nulls, duplicates, reliability scores) |
+| 💬 Chat Analytics | Ask business questions in natural language, get Plotly visualizations |
+| 🔌 Hybrid Input | CSV, Excel uploads or direct MySQL connection |
+| 🛡️ Fallback Mode | Charts still generate if the AI API goes down |
 
-O sistema possui um **"Motor Híbrido"** de resiliência: se a API de IA falhar, um algoritmo lógico assume a geração dos gráficos, garantindo que o usuário nunca fique sem visualização.
+## Stack
 
-## 🚀 Funcionalidades Principais
+`Python` · `Streamlit` · `Plotly` · `Google Gemini AI` · `Pandas` · `MySQL`
 
-* **🤖 Modo Inteligente (AI-Powered):** A IA analisa a estrutura do seu arquivo (CSV/Excel) ou Banco SQL e sugere automaticamente os melhores KPIs e gráficos para o seu contexto de negócio.
-* **🎨 Construtor Manual (Builder):** Interface "No-Code" para selecionar entre **+30 tipos de gráficos** (incluindo visuais avançados do Power BI como Waterfall, Funnel, Sankey e Gauge).
-* **🩺 Monitor de Saúde dos Dados (Data Health):** Diagnóstico automático de qualidade dos dados, identificando nulidade, duplicatas e confiabilidade da base (feature essencial para Auditoria de Dados).
-* **💬 Chat com os Dados:** Um assistente virtual integrado que responde perguntas de negócio gerando gráficos Python/Plotly em tempo real.
-* **🔌 Conectividade Híbrida:** Suporte para upload de arquivos locais (`.csv`, `.xlsx`) e conexão direta com bancos de dados **MySQL**.
+## How to Run
 
-## 🛠️ Tecnologias Utilizadas
+```bash
+git clone https://github.com/guilhermehrsilva/data-insight-ai.git
+cd data-insight-ai
+pip install -r requirements.txt
+streamlit run app.py
+```
 
-* **Linguagem:** Python
-* **Frontend:** Streamlit
-* **Visualização:** Plotly Express & Graph Objects
-* **Inteligência Artificial:** Google Generative AI (Gemini 1.5 Flash / 2.0 / Pro)
-* **Banco de Dados:** MySQL Connector
-* **Manipulação de Dados:** Pandas
+> Requires a Google Gemini API key configured as environment variable.
 
-## 📦 Como Executar
+## Screenshot
 
-### Pré-requisitos
-* Python 3.10 ou superior.
-* Uma chave de API do Google (Google AI Studio).
-
-### Instalação
-
-1. **Clone o repositório:**
-   ```bash
-   git clone [https://github.com/SEU-USUARIO/data-insight-ai.git](https://github.com/SEU-USUARIO/data-insight-ai.git)
-   cd data-insight-ai
-
-2. **Instale as dependências:**
-   ```bash
-   pip install -r requirements.txt
-
-3. **Configure as credenciais:**
-* Crie uma pasta chamada .streamlit na raiz do projeto.
-* Crie um arquivo secrets.toml dentro dela.
-* Adicione sua chave de API no arquivo:
-   ```bash
-   GOOGLE_API_KEY = "SUA_CHAVE_AQUI"
-
-4. **Execute a aplicação:**
-   ```bash
-   streamlit run app.py
-
-5. **🎁 Bônus: Arquivo `requirements.txt`**
-   ```bash
-   Para que o passo 2 da instalação (`pip install -r requirements.txt`) funcione, crie um arquivo chamado `requirements.txt` na mesma pasta do seu projeto e cole isso dentro:
-```text
-streamlit
-pandas
-plotly
-google-generativeai
-mysql-connector-python
-openpyxl
+![DataInsight AI Interface](front.png)
