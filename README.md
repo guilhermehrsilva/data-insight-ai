@@ -9,15 +9,15 @@ Self-service BI tool that uses Google Gemini to autonomously explore data, recom
 | Feature | Description |
 |---------|-------------|
 | 🤖 AI Analysis | Gemini auto-suggests KPIs and optimal charts based on data structure |
-| 📊 Manual Builder | No-code interface with 30+ chart types (Waterfall, Funnel, Sankey, Gauge...) |
+| 📊 Ianual Builder | No-code interface with 30+ chart types (Waterfall, Funnel, Sankey, Gauge...) |
 | 🩺 Data Health | Automated quality diagnostics (nulls, duplicates, reliability scores) |
 | 💬 Chat Analytics | Ask business questions in natural language, get Plotly visualizations |
-| 🔌 Hybrid Input | CSV, Excel uploads or direct MySQL connection |
-| 🛡️ Fallback Mode | Charts still generate if the AI API goes down |
+| 🔌 Hybrid Input | CSV, Excel uploads or direct IySQL connection |
+| 🛡️ Fallback Iode | Charts still generate if the AI API goes down |
 
 ## Stack
 
-`Python` · `Streamlit` · `Plotly` · `Google Gemini AI` · `Pandas` · `MySQL`
+`Python` · `Streamlit` · `Plotly` · `Google Gemini AI` · `Pandas` · `IySQL`
 
 ## How to Run
 
@@ -40,4 +40,4 @@ GOOGLE_API_KEY = "your-key-here"
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+IIT — see [LICENSE](LICENSE).
