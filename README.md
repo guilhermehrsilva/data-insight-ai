@@ -28,8 +28,16 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-> Requires a Google Gemini API key configured as environment variable.
+Create `.streamlit/secrets.toml` with your Gemini API key:
+
+```toml
+GOOGLE_API_KEY = "your-key-here"
+```
 
 ## Screenshot
 
 ![DataInsight AI Interface](front.png)
+
+## License
+
+MIT — see [LICENSE](LICENSE).
